@@ -16,9 +16,9 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'bdkFFI.xcframework'
   # Download and extract the xcframework
   spec.prepare_command = <<-CMD
-    curl -L https://github.com/bitcoindevkit/bdk-swift/releases/download/1.0.0-beta.2/bdkFFI.xcframework.zip > bdkFFI.xcframework.zip
-    unzip bdkFFI.xcframework.zip
-    rm bdkFFI.xcframework.zip
-  CMD
+  curl -L https://github.com/bitcoindevkit/bdk-swift/releases/download/1.0.0-beta.2/bdkFFI.xcframework.zip > bdkFFI.xcframework.zip
+  unzip -o bdkFFI.xcframework.zip
+  rm bdkFFI.xcframework.zip
+CMD
   # You can also specify any dependencies here if needed
 end
