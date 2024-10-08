@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'bdk-swift'
-  spec.version      = '1.0.0-beta.2'
+  spec.version      = '1.0.0-alpha.2a'
   spec.summary      = 'Swift bindings for the Bitcoin Dev Kit (BDK)'
   spec.description  = 'BDK-swift provides Swift bindings for BDK, a lightweight Bitcoin wallet toolkit for building wallets.'
   spec.homepage     = "https://github.com/bitcoindevkit/bdk-swift/tree/#{spec.version}"
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'bdkFFI.xcframework'
   # Download and extract the xcframework
   spec.prepare_command = <<-CMD
-  curl -L https://github.com/bitcoindevkit/bdk-swift/releases/download/1.0.0-beta.2/bdkFFI.xcframework.zip > bdkFFI.xcframework.zip
+  curl -L https://github.com/bitcoindevkit/bdk-swift/releases/download/1.0.0-alpha.2a/bdkFFI.xcframework.zip > bdkFFI.xcframework.zip
   unzip -o bdkFFI.xcframework.zip
   rm bdkFFI.xcframework.zip
 CMD
